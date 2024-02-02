@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/style.css" rel="stylesheet">
+    <link href="CSS/taskList.css" rel="stylesheet">
+    <scrtipt defer src="js/scripts.js"></scrtipt>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Lista zadań</title>
+</head>
+
+<body class="body">
+    <p class="taskList__title">Lista zadań</p>
+    <div class="taskList__flex">
+        <div class="taskList__header">
+            <p class="taskList__subHeader">Dodaj nowe zadanie</p>
+        </div>
+        <div class="taskList__content">
+            <input class="taskList__input" type="text" name="form__baseValue" placeholder="Co jest do zrobienia?"
+                min="1" step="any" autofocus>
+            <button class="taskList__button"> Dodaj zadanie </button>
+        </div>
+    </div>
+    <div class="taskList__flex">
+        <div class="taskList__header">
+            <p class="taskList__subHeader">Lista zadań</p>
+        </div>
+        <div class="taskList__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, sapiente rerum
+            obcaecati possimus sint suscipit omnis dolorem, consequatur eos perspiciatis culpa expedita facilis,
+            incidunt velit enim soluta doloremque eum accusamus.</div>
+    </div>
+</body>
+
+</html>

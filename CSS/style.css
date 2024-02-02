@@ -1,0 +1,20 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    background-color: #ededed;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    margin: 2% 25% 0px 25%;
+}
+
+@media (max-width: 767px) {
+    .body {
+        margin: 2% 5% 0px 5%;
+    }
+}
