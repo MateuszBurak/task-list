@@ -1,9 +1,9 @@
 # Mateusz Burak - simple task list
 
-## Currency converter - submit - January 31th, 2024
+## Task List - February 5th, 2024
 
-[Link to the converter](https://mateuszburak.github.io/task-list/) |
-[Link to the converter's repository](https://github.com/MateuszBurak/task-list)
+[Link to the task list app](https://mateuszburak.github.io/task-list/) |
+[Link to the task list repository](https://github.com/MateuszBurak/task-list)
 
 This application helps you follow your daily tasks. It can:
 1. Add new tasks to your task list
@@ -22,7 +22,7 @@ Then, if the task is done, you can cross it out of your list by pressing the but
 
 ![Animated gif of the site and its functions](images/taskListBasicAnimation2.gif)
 
-If you want to remove the task from the list altogether, simply press the button to the right of the desired task
+If you want to remove the task from the list altogether, simply press the button to the right of the desired task.
 
 ![Animated gif of the site and its functions](images/taskListBasicAnimation3.gif)
 
