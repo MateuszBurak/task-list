@@ -10,6 +10,19 @@
         },
     ];
 
+    const addNewTask = (newTaskContent) => {
+        tasks.push({
+            content: newTaskContent,
+        });
+
+        render();
+    };
+
+    const removeTask = (taskIndex) => {
+        tasks.splice(taskIndex, 1);
+        render();
+    }
+
     const render = () => {
         let htmlString = "";
 
@@ -18,20 +31,20 @@
             <li class="taskList__listItem">
                 <button class="taskList__buttonDone">✔</button>
                     <div class=\"taskList__listItemContent ${task.done ? "taskList__listItemContent--done" : ""}">${task.content}</div>
-                <button class="taskList__buttonDeleteTask">🗑</button>
+                <button class="taskList__buttonDeleteTask js-remove">🗑</button>
             </li>
             `;
         };
 
         document.querySelector(".js-list").innerHTML = htmlString;
-    };
 
-    const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
+        const removeButtons = document.querySelectorAll(".js-remove");
+
+        removeButtons.forEach((removeButton, index) => {
+            removeButton.addEventListener("click", () => {
+                removeTask(index);
+            });
         });
-
-        render();
     };
 
     const onFormSubmit = (event) => {
