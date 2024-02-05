@@ -10,7 +10,8 @@ html {
     background-color: #ededed;
     font-family: 'Lato', sans-serif;
     text-align: left;
-    margin: 2% 25% 0px 25%;
+    margin: 2% 15% 0px 15%;
+    word-break: break-word
 }
 
 @media (max-width: 767px) {
