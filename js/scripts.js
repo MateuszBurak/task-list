@@ -64,6 +64,7 @@
         const newTaskField = document.getElementById("newTaskField");
 
         if (newTaskContent === "") {
+            newTaskField.value = "";
             newTaskField.focus();
             return;
         }
