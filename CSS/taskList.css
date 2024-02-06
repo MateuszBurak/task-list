@@ -81,6 +81,7 @@
 }
 
 .taskList__listItemContent {
+    flex-grow: 1;
     padding-left: 15px;
     padding-right: 15px;
 }

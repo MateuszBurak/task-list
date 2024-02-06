@@ -19,24 +19,28 @@
 </head>
 
 <body class="body">
-    <p class="taskList__title">Lista zadań</p>
-    <form class="taskList__flex js-form">
-        <div class="taskList__header">
-            <p class="taskList__subHeader">Dodaj nowe zadanie</p>
+    <h1 class="taskList__title">Lista zadań</h1>
+    <section>
+        <form class="taskList__flex js-form">
+            <div class="taskList__header">
+                <h2 class="taskList__subHeader">Dodaj nowe zadanie</h2>
+            </div>
+            <div class="taskList__content">
+                <input class="taskList__input js-newTask" id="newTaskField" type="text" name="form__baseValue"
+                    placeholder="Co jest do zrobienia?" min="1" step="any" autofocus>
+                <button class="taskList__button"> Dodaj zadanie </button>
+            </div>
+        </form>
+    </section>
+    <section>
+        <div class="taskList__flex">
+            <div class="taskList__header">
+                <h2 class="taskList__subHeader">Lista zadań</h2>
+            </div>
+            <ul class="js-list taskList__list">
+            </ul>
         </div>
-        <div class="taskList__content">
-            <input class="taskList__input js-newTask" id="newTaskField" type="text" name="form__baseValue"
-                placeholder="Co jest do zrobienia?" min="1" step="any" autofocus>
-            <button class="taskList__button"> Dodaj zadanie </button>
-        </div>
-    </form>
-    <div class="taskList__flex">
-        <div class="taskList__header">
-            <p class="taskList__subHeader">Lista zadań</p>
-        </div>
-        <ul class="js-list taskList__list">
-        </ul>
-    </div>
+    </section>
 </body>
 
 </html>
