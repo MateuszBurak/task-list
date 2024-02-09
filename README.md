@@ -15,7 +15,7 @@ It follows BEM convention and uses ES6+ features.
 
 ## How to use
 
-To use it, first add any new task by writing it down and then **pressing the button** or pressingh **"Enter"** on your keyboard.
+To use it, first add any new task by writing it down and then **pressing the button** or pressing **"Enter"** on your keyboard.
 
 ![Animated gif of the site and its functions](images/taskListBasicAnimation.gif)
 
