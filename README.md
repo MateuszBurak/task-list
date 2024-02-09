@@ -27,7 +27,7 @@ If you want to remove the task from the list altogether, simply press the button
 
 ![Animated gif of the site and its functions](images/taskListBasicAnimation3.gif)
 
-If you want to hide the tasks that are already done, press "Ukryj zakończone" button.
+If you want to hide the tasks that are already done, press "Ukryj ukończone" button.
 If you want to see the hidden tasks again, press "Pokaż ukończone" button.
 
 ![Animated gif of the site and its functions](images/taskListBasicAnimation4.gif)
