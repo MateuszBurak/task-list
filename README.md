@@ -2,7 +2,7 @@
 
 ## Task List - February 5th, 2024
 
-[Link to the task list app](https://mateuszburak.github.io/task-list/) |
+[Link to the demo](https://mateuszburak.github.io/task-list/)
  
 This application helps you follow your daily tasks. It can:
 1. Add new tasks to your task list
