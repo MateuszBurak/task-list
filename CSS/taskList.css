@@ -95,6 +95,10 @@
     margin-bottom: 10px;
 }
 
+.taskList__listItem--hidden {
+    display: none;
+}
+
 .taskList__listItemContent {
     flex-grow: 1;
     padding-left: 15px;
@@ -169,19 +173,26 @@
 .taskList__listButton {
     border: none;
     background-color: #ffffff;
-    cursor: pointer;
-    color: #007482;
     transition: 0.4s;
     margin-left: 20px;
+    margin-right: 20px;
+    color: #007482;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .taskList__listButton:hover {
     color: #008fa0;
 }
 
+.taskList__listButton:disabled {
+    color: #ccc;
+}
+
 @media (max-width: 767px) {
     .taskList__listButton {
         margin-bottom: 10px;
         margin-left: 0px;
+        margin-right: 0px;
     }
 }
