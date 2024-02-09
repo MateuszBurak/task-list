@@ -69,6 +69,7 @@
 
 .taskList__button:hover {
     background-color: #008fa0;
+    transform: scale(1.1);
 }
 
 @media (max-width: 767px) {
@@ -120,8 +121,8 @@
 }
 
 .taskList__buttonDone:hover {
-    background-color: #0e692c;
-    color: #0e692c;
+    background-color: #159c41;
+    color: #159c41;
 }
 
 .taskList__buttonDone:active {
