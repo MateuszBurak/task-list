@@ -32,7 +32,7 @@
             },
             ...tasks.slice(taskIndex + 1),
         ];
-        
+
         render();
     };
 
@@ -75,7 +75,17 @@
     };
 
     const renderButtons = () => {
+        const listButtonsElement = document.querySelector(".js-listButtons");
 
+        if (!tasks.length) {
+            listButtonsElement.innerHTML = "";
+            return;
+        }
+
+        listButtonsElement.innerHTML = `
+        <button class="taskList__listButton js-hideDoneTasksButton">Ukryj ukończone</button>
+        <button class="taskList__listButton js-markAsDoneButton">Ukończ wszystkie</button>
+        `
     };
 
 

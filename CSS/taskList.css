@@ -153,6 +153,19 @@
     border: #000000 2px solid;
 }
 
+.taskList__listButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .taskList__listButtons {
+        flex-grow: 1;
+        flex-direction: column;
+    }
+}
+
 .taskList__listButton {
     border: none;
     background-color: #ffffff;
@@ -168,7 +181,6 @@
 
 @media (max-width: 767px) {
     .taskList__listButton {
-        flex-grow: 1;
         margin-bottom: 10px;
         margin-left: 0px;
     }

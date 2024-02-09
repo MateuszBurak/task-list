@@ -36,8 +36,10 @@
         <div class="taskList__flex">
             <div class="taskList__header">
                 <h2 class="taskList__subHeader">Lista zadań</h2>
-                <button class="taskList__listButton">Ukryj ukończone</button>
-                <button class="taskList__listButton">Ukończ wszystkie</button>
+                <div class="taskList__listButtons js-listButtons">
+                    <button class="taskList__listButton js-hideDoneTasksButton">Ukryj ukończone</button>
+                    <button class="taskList__listButton js-markAsDoneButton">Ukończ wszystkie</button>
+                </div>
             </div>
             <ul class="js-list taskList__list">
             </ul>
