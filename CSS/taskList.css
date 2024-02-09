@@ -13,13 +13,22 @@
 }
 
 .taskList__header {
+    display: flex;
     border-bottom: 3px solid #ededed;
+    flex-direction: row;
+}
+
+@media (max-width: 767px) {
+    .taskList__header {
+        flex-direction: column;
+    }
 }
 
 .taskList__subHeader {
     font-size: 25px;
     font-weight: bold;
     margin: 20px 20px 20px 20px;
+    flex-grow: 1;
 }
 
 .taskList__content {
@@ -55,6 +64,11 @@
     padding: 5px 10px;
     cursor: pointer;
     border: none;
+    transition: 0.4s;
+}
+
+.taskList__button:hover {
+    background-color: #008fa0;
 }
 
 @media (max-width: 767px) {
@@ -102,11 +116,16 @@
     justify-content: center;
     align-items: center;
     color: #117e35;
+    transition: 0.4s;
+}
+
+.taskList__buttonDone:hover {
+    background-color: #0e692c;
+    color: #0e692c;
 }
 
 .taskList__buttonDone:active {
     border: #000000 2px solid;
-    background-color: #0e692c;
     color: #ffffff;
 }
 
@@ -122,9 +141,34 @@
     justify-content: center;
     align-items: center;
     color: #ffffff;
+    transition: 0.4s;
+}
+
+.taskList__buttonDeleteTask:hover {
+    background-color: #d51c07;
 }
 
 .taskList__buttonDeleteTask:active {
     border: #000000 2px solid;
-    background-color: #d51c07;
+}
+
+.taskList__listButton {
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #007482;
+    transition: 0.4s;
+    margin-left: 20px;
+}
+
+.taskList__listButton:hover {
+    color: #008fa0;
+}
+
+@media (max-width: 767px) {
+    .taskList__listButton {
+        flex-grow: 1;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
 }

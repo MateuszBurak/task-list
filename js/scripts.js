@@ -1,24 +1,40 @@
 {
-    const tasks = [
-    ];
+    let tasks = [];
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
+        tasks = [
+            ...tasks,
+            {
+                content: newTaskContent,
+                done: false,
+            }
+        ]
 
         render();
     };
 
     const removeTask = (taskIndex) => {
-        tasks.splice(taskIndex, 1);
+
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            ...tasks.slice(taskIndex + 1),
+        ];
+
         render();
-    }
+    };
 
     const toggleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done = !tasks[taskIndex].done;
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            {
+                ...tasks[taskIndex],
+                done: !tasks[taskIndex].done,
+            },
+            ...tasks.slice(taskIndex + 1),
+        ];
+        
         render();
-    }
+    };
 
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
@@ -38,23 +54,38 @@
         });
     }
 
-    const render = () => {
+    const bindButtonEvents = () => {
+
+    };
+
+    const renderTasks = () => {
         let htmlString = "";
 
         for (const task of tasks) {
             htmlString += `
-            <li class="taskList__listItem">
-                <button class="taskList__buttonDone js-done">✔</button>
-                    <div class=\"taskList__listItemContent ${task.done ? "taskList__listItemContent--done" : ""}">${task.content}</div>
-                <button class="taskList__buttonDeleteTask js-remove">🗑</button>
-            </li>
-            `;
+        <li class="taskList__listItem">
+            <button class="taskList__buttonDone js-done">✔</button>
+                <div class=\"taskList__listItemContent ${task.done ? "taskList__listItemContent--done" : ""}">${task.content}</div>
+            <button class="taskList__buttonDeleteTask js-remove">🗑</button>
+        </li>
+        `;
         };
 
         document.querySelector(".js-list").innerHTML = htmlString;
+    };
 
+    const renderButtons = () => {
+
+    };
+
+
+    const render = () => {
+
+        renderTasks();
+        renderButtons();
+
+        bindButtonEvents();
         bindEvents();
-
     };
 
     const onFormSubmit = (event) => {
