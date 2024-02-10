@@ -172,7 +172,7 @@
 
 .taskList__listButton {
     border: none;
-    background-color: #ffffff;
+    background-color: transparent;
     transition: 0.4s;
     margin-left: 20px;
     margin-right: 20px;
