@@ -100,7 +100,9 @@
 }
 
 .taskList__listItemContent {
+    display: flex;
     flex-grow: 1;
+    align-items: center;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -175,9 +177,7 @@
     background-color: transparent;
     transition: 0.4s;
     margin-left: 20px;
-    margin-right: 20px;
     color: #007482;
-    padding-left: 10px;
     padding-right: 10px;
 }
 

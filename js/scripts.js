@@ -105,8 +105,12 @@
         }
 
         listButtonsElement.innerHTML = `
-        <button class="taskList__listButton js-hideDoneTasksButton" >${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone</button>
-        <button class="taskList__listButton js-markAsDoneButton" ${tasks.every(({ done }) => done) ? "disabled" : ""}>Ukończ wszystkie</button>
+        <button class="taskList__listButton js-hideDoneTasksButton" >
+            ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+        </button>
+        <button class="taskList__listButton js-markAsDoneButton" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
+            Ukończ wszystkie
+        </button>
         `
     };
 
